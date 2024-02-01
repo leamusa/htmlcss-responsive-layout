@@ -1,6 +1,21 @@
-:root {
-  --resp-header-bg-color: #0185fd;
-  --resp-main-color: #9793e5;
-  --resp-main1-color: #fffefe;
-  --resp-footer-bg-color: #23272a;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+header {
+  height: 80px;
+  background-color: #0185fd;
+}
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 2opx;
+  align-items: center;
+  list-style-type: none;
+}
+.fa-bars {
+  font-size: 30px;
+  color: #fffefe;
 }
