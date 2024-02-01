@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px dashed;
   
 }
 header {
@@ -18,4 +19,29 @@ header {
 .fa-bars {
   font-size: 30px;
   color: #fffefe;
+}
+.container {
+  width: 80%;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.row {
+  background-color: #b5ddff;
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+@media (min-width:768px) {
+  header{
+    width: 100%;
+  }
+  .container.box: :first-child {
+    width: 66%;
+}
+.container.box{
+  width: 33%;
+}
+  
 }
