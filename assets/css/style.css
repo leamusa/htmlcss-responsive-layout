@@ -1,6 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: brown;
-  }
+:root {
+  --resp-header-bg-color: #0185fd;
+  --resp-main-color: #9793e5;
+  --resp-main1-color: #fffefe;
+  --resp-footer-bg-color: #23272a;
+}
