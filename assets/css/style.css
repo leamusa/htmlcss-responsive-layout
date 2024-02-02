@@ -2,29 +2,36 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px;
+  border: 1px dashed;
 }
+
+body {
+  font-family: Arial, sans-serif;
+}
+
 header {
   height: 80px;
   background-color: #0185fd;
 }
+
 .menu ul {
   display: flex;
   justify-content: space-between;
-  padding: 2opx;
+  padding: 20px;
   align-items: center;
   list-style-type: none;
 }
+
 .fa-bars {
   font-size: 30px;
-  color: #fffefe;
+  color: #fff;
 }
+
 .container {
   width: 80%;
-  height: 200px;
-  margin: 0 auto;
-  margin-top: 30px;
+  margin: 30px auto 0;
 }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -34,9 +41,7 @@ header {
   padding-top: 40px;
   padding-inline: 30px;
   margin-bottom: 30px;
-}
-.col-12 {
-  width: 100%;
+  margin-top: 30px;
 }
 
 .title {
@@ -44,17 +49,21 @@ header {
   font-size: x-large;
   text-align: center;
 }
+
 @media (min-width: 768px) {
   header {
     width: 100%;
   }
-  .container.row: :first-child {
+
+  .container.row :first-child {
     width: 66%;
   }
+
   .container.col-12 {
     width: 30%;
   }
+
   .col-md-8 {
-    width: calc((100% / 12) * 8);
+    width: 66.6667%;
   }
 }
