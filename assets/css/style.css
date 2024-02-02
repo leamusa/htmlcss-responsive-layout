@@ -29,9 +29,24 @@ header {
 }
 
 /* Container styles */
-#service.container {
-  width: 80%;
-  margin: 30px auto 0;
+.container {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+#services-section .col-big,
+#services-section .col-small {
+  width: 100%;
+}
+
+.p-1 {
+  padding: 1rem;
 }
 
 /* Card styles service card */
@@ -41,57 +56,110 @@ header {
   background-color: #b5ddff;
   border-radius: 5%;
   gap: 50px;
-  padding-top: 40px;
-  padding-inline: 30px;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
 }
+
+.service-card img {
+  width: 80%;
+}
+
 /* icons */
-#services-section .fa-solid {
+.service-card i {
   font-size: 5rem;
   color: #0084fd;
   align-self: center;
 }
 
 /* Title styles */
-h1 {
+.service-card h1 {
   color: #0185fd;
   font-size: x-large;
   text-align: center;
 }
 
-/* Media query for larger screens */
-/* Media query for larger screens */
-@media (min-width: 768px) {
+.service-card .card-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*splanning cards*/
+#planning-section .col-big,
+#planning-section .col-small {
+  width: 100%;
+  display: flex;
+}
+
+.p2 {
+  padding: 1rem;
+}
+.planning-card img {
+  width: 100%;
+}
+.planning-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #9693e4;
+
+  gap: 50px;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.planning-card h2 {
+  color: #e2e3e4;
+  font-size: x-large;
+  text-align: center;
+}
+.planning-card p {
+  color: white;
+}
+.service-card .card-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Media query for tablets */
+@media (min-width: 576px) {
   header {
     width: 100%;
   }
 
-  #services-section .container,
-  #planning-section .container,
-  #testimonials-section .container,
-  #benefits-section .container,
-  #about-section .container {
-    width: 66%;
+  .container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  #services-section .col-big {
+    width: calc((100% / 3) * 2);
+  }
+
+  #services-section .col-small {
+    width: calc(100% / 3);
   }
 }
+#plannig-section .col-big {
+  width: calc((100% / 3) * 2);
+}
 
+#plannig-section .col-small {
+  width: calc(100% / 3);
+}
+
+/* Computer */
 @media (min-width: 992px) {
-  #services-section .container,
-  #planning-section .container,
-  #testimonials-section .container,
-  #benefits-section .container,
-  #about-section .container {
-    width: 70%;
-  }
-}
-
-@media (min-width: 1200px) {
-  #services-section .container,
-  #planning-section .container,
-  #testimonials-section .container,
-  #benefits-section .container,
-  #about-section .container {
-    width: 80%;
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
