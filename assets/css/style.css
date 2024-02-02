@@ -29,13 +29,13 @@ header {
 }
 
 /* Container styles */
-.container {
+#service.container {
   width: 80%;
   margin: 30px auto 0;
 }
 
-/* Card styles */
-.card {
+/* Card styles service card */
+.service-card {
   display: flex;
   flex-direction: column;
   background-color: #b5ddff;
@@ -46,29 +46,52 @@ header {
   margin-bottom: 30px;
   margin-top: 30px;
 }
+/* icons */
+#services-section .fa-solid {
+  font-size: 5rem;
+  color: #0084fd;
+  align-self: center;
+}
 
 /* Title styles */
-.card-title {
+h1 {
   color: #0185fd;
   font-size: x-large;
   text-align: center;
 }
 
 /* Media query for larger screens */
+/* Media query for larger screens */
 @media (min-width: 768px) {
   header {
     width: 100%;
   }
 
-  .container.row :first-child {
+  #services-section .container,
+  #planning-section .container,
+  #testimonials-section .container,
+  #benefits-section .container,
+  #about-section .container {
     width: 66%;
   }
+}
 
-  .container.col-12 {
-    width: 30%;
+@media (min-width: 992px) {
+  #services-section .container,
+  #planning-section .container,
+  #testimonials-section .container,
+  #benefits-section .container,
+  #about-section .container {
+    width: 70%;
   }
+}
 
-  .col-md-8 {
-    width: 66.6667%;
+@media (min-width: 1200px) {
+  #services-section .container,
+  #planning-section .container,
+  #testimonials-section .container,
+  #benefits-section .container,
+  #about-section .container {
+    width: 80%;
   }
 }
