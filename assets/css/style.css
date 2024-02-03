@@ -87,56 +87,76 @@ header {
   align-items: center;
 }
 
-/*splanning cards*/
-#planning-section .col-big,
-#planning-section .col-small {
-  width: 100%;
-  display: flex;
+/*planning cards*/
+
+#planning-section {
+  background-color: #9792e4;
+  padding: 80px 0px;
 }
 
-.p2 {
-  padding: 1rem;
+#planning-section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.planning-card img {
+
+#planning-section .card {
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#planning-section img {
   width: 100%;
 }
-.planning-card {
+
+#planning-section .card-content.development h1,
+#planning-section .card-content.development p {
+  color: rgb(15, 15, 15);
+}
+
+#planning-section .card-content.planning h1,
+#planning-section .card-content.planning p {
+  color: rgb(255, 255, 255);
+}
+
+#planning-section .card-content {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+}
+
+#planning-section .card-content.development {
+  background-color: white;
+  border-radius: 3rem;
+  padding: 50px;
+  height: 60%;
+  width: 50%;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#planning-section .card-content.planning {
   display: flex;
   flex-direction: column;
-  background-color: #9693e4;
-
-  gap: 50px;
-  padding: 1.5rem;
-  align-items: center;
   justify-content: space-between;
-  height: 100%;
-}
-.planning-card h2 {
-  color: #e2e3e4;
-  font-size: x-large;
-  text-align: center;
-}
-.planning-card p {
-  color: white;
-}
-.service-card .card-content {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+}
+
+.fa-circle-arrow-down {
+  font-size: 3rem;
+  padding: 20px;
+  color: #9792e4;
 }
 
 /* Media query for tablets */
 @media (min-width: 576px) {
   header {
     width: 100%;
-  }
-
-  .container {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
   }
 
   #services-section .col-big {
@@ -148,7 +168,7 @@ header {
   }
 }
 #plannig-section .col-big {
-  width: calc((100% / 3) * 2);
+  max-width: 100%;
 }
 
 #plannig-section .col-small {
