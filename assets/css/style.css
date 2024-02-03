@@ -152,6 +152,114 @@ header {
   padding: 20px;
   color: #9792e4;
 }
+/*testimonial section*/
+#testimonials-section {
+  padding: 50px 0px;
+}
+
+#testimonials-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#testimonials-section .card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#testimonials-section .card-content {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9792e4;
+  border-radius: 2rem;
+  padding: 20px 10px;
+  margin: 20px 0px;
+}
+
+#testimonials-section .picture {
+  width: 20%;
+  aspect-ratio: 4/4;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.testimonial-1 {
+  background-image: url(../img/testimonial1\ -\ Copia.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.testimonial-2 {
+  background-image: url(../img/testimonial2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.testimonial-3 {
+  background-image: url(../img/testimonial3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#testimonials-section .description {
+  flex-basis: 80%;
+  height: 100%;
+}
+
+#testimonials-section .description p {
+  color: white;
+}
+
+#testimonials-section .description p::after {
+  content: close-quote;
+  color: white;
+  vertical-align: bottom;
+  line-height: 0;
+  font-size: 3rem;
+}
+
+#testimonials-section .description p::before {
+  content: open-quote;
+  color: white;
+  vertical-align: bottom;
+  line-height: 0;
+  font-size: 3rem;
+}
+
+#testimonials-section .container > p {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#testimonials-section h3 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 30px;
+}
+
+#testimonials-section h6 {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+h4 {
+  color: #9792e4;
+}
 
 /* Media query for tablets */
 @media (min-width: 576px) {
