@@ -98,14 +98,15 @@ header {
 
 #planning-section .container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; /* Aadd for sm screen */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Aadd for sm screen */
 }
 
 #planning-section .card {
-  flex-basis: calc(50% - 20px); /* calc margin*/
-  margin-bottom: 20px; /* add space */
+  flex-basis: calc(60% - 40px); /* calc margin*/
+  margin-bottom: 50px; /* add space */
 }
 
 #planning-section img {
@@ -252,45 +253,59 @@ h4 {
 /*************************************************
    benefits-section
 *************************************************/
+/* Add title*/
 #benefits-section > h1 {
   font-size: 2.8rem;
   text-align: center;
   color: white;
-}
 
+}
+/* Add title --(01high quality-02creative-03amazing-etc) */
 #benefits-section .benefits-card h2 {
   font-size: 1.4rem;
-  color: #fcfcfc;
+  color: #9792e4;
 }
 
-#benefits-section .benefits-card p {
-  font-size: 1rem;
-}
 
 #benefits-section {
   background-color: #9792e4;
-  padding: 50px 0px;
+  
 }
+/* Add flex to benefits section */
 
 #benefits-section .container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  
 }
 
 .benefits-card {
-  width: calc(100% - 20px);
+  width: calc((100% /3) - 20px);
   margin: 10px;
 }
 
+
 .benefits-card .card-content {
   background-color: white;
-  border-radius: 2rem;
+  border-radius: 1rem;
   padding: 30px;
   height: 100%;
 }
+#benefits-section .container {
+  
+    flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: stretch;
+}
 
-/*************************************************
+.
+
+/*-- add flex---/*
+/
+*************************************************
    about-us-section
 *************************************************/
 
@@ -310,7 +325,7 @@ h4 {
 
 #about-section p {
   font-size: 1.3rem;
-  color: #000000;
+  color: #9792e4;
 }
 
 .fa-quote-left {
@@ -386,8 +401,9 @@ footer h6 {
   font-size: 1rem;
   font-weight: 300;
 }
-/* Media query */
-
+/*************************************************
+   media-query
+*************************************************/
 /* Media query for tablets */
 @media (min-width: 576px) {
   header {
@@ -407,11 +423,25 @@ footer h6 {
     flex-basis: calc(50% - 20px); /*  add flex for bg screen */
   }
 
-  #planning-section .card:first-child {
-    flex-basis: calc(50% - 20px); /* flex to put 1 card und 2 card */
+
+/* Per schermi di larghezza massima di 576px (mobile first) */
+@media screen and (max-width: 576px) {
+  #benefits-section .benefits-card {
+    width: calc(100% - 20px);
+    margin: 10px;
+  }
+}
+
+/* Per schermi di larghezza minima di 577px (quando si desidera la visualizzazione a 3 colonne) */
+@media screen and (min-width: 577px) {
+  #benefits-section .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-  #planning-section .card:last-child {
-    flex-basis: calc(50% - 20px); /* add  flex to last child to put card as dipendent of first card*/
+  #benefits-section .benefits-card {
+    width: calc(33.33% - 20px);
+    margin: 10px;
   }
 }
