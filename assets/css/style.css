@@ -292,6 +292,8 @@ h4 {
   padding: 30px;
   height: 100%;
 }
+
+
 #benefits-section .container {
   
     flex-wrap: wrap;
@@ -301,10 +303,8 @@ h4 {
     align-items: stretch;
 }
 
-.
 
-/*-- add flex---/*
-/
+
 *************************************************
    about-us-section
 *************************************************/
