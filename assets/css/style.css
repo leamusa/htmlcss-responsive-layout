@@ -39,43 +39,28 @@ header {
   flex-wrap: wrap;
   padding: 0 1rem;
 }
-header {
-  background-color: #0084fd;
-
-  padding: 10px;
-  margin-bottom: 40px;
-}
-
-header .container {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.5rem 0;
 }
 
-header .nav-elements {
-  display: flex;
-  align-items: center;
+.header img {
+  position: relative;
+  left: 30px;
 }
 
-header a {
+.header i {
+  position: relative;
+  right: 30px;
+  font-size: 2rem;
   color: white;
-  text-decoration: none;
-  padding: 0px 15px; /*header fa al contrario fa comparire le cose solo al mobile devo controllare le query*/
-  font-size: 1.1rem;
-  font-weight: 300;
-  white-space: nowrap;
 }
 
-header ul {
-  display: flex;
-  list-style-type: none;
-  gap: 10px;
+.header ul {
+  display: none;
 }
-
-header li {
-  text-decoration: none;
-}
-
 /*************************************************
    services-section
 *************************************************/
@@ -491,15 +476,39 @@ footer p {
    media-query
 *************************************************/
 /* Media query for tablets */
+/*
 @media (min-width: 576px) {
-  @media all and (max-width: 1100px) {
-    header .nav-elements {
-        display: none;
-    }
-}
+  @media all and (max-width: 1100px) {*/
+    
+@media screen and (min-width: 556px) {
+  .header {
+      width: 70%;
+      margin: 0 auto;
+  }
 
-header .fa-bars {
-    color: white;
+  .header i {
+      display: none;
+  }
+
+  .header ul {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      list-style-type: none;
+      margin-right: 1rem;
+  }
+
+  .header li {
+      color: white;
+      font-size: 1.2rem;
+  }
+
+  .header li:last-child {
+      color: black;
+      background-color: white;
+      padding: 0.4rem;
+      border-radius: 10px;
+  }
 }
 
 /* media query - DESKTOP */
@@ -561,11 +570,5 @@ header .fa-bars {
       top: 0;
       right: 0;
       font-size: 8vw;
-  }
-}
-}
-@media all and (max-width: 520px) {
-  #footer-section .bottom-block {
-    background-color: none;
   }
 }
