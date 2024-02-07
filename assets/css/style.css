@@ -346,12 +346,11 @@ h4 {
 
 #about-section .container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  gap: 30px;
-
-  height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    height: fit-content;
+    flex-direction: flex-end;
 }
 
 #about-section .card-about {
@@ -362,14 +361,16 @@ h4 {
 }
 
 #about-section .card-content {
-  width: calc(100% - 20px);
-  height: calc(100% - 20px);
+  isplay: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  height: fit-content;
 }
 
 #about-section .picture {
   width: 100%;
   aspect-ratio: 4/4;
-
   border-radius: 50%;
   background-size: cover;
   background-image: url(../img/about.jpg);
@@ -390,6 +391,7 @@ h4 {
   padding: 5px 15px;
   text-decoration: none;
   white-space: nowrap;
+  margin-top: 100px;
 }
 
 /*************************************************
@@ -517,7 +519,7 @@ footer p {
   }
 
   #benefits-section .container {
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -526,11 +528,16 @@ footer p {
     width: calc(33.33% - 20px);
     margin: 10px;
   }
-
+  @media screen and (min-width: 566px)  {
   #about-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    height: fit-content;
     flex-direction: column;
   }
-
+  @media screen and (min-width: 566px)  {
   #about-section .card-about {
     width: 100%;
   }
@@ -546,9 +553,10 @@ footer p {
     font-size: 8vw;
   }
 }
+  }
 
-/* Media query per dispositivi con larghezza compresa tra 557px e 1400px (stili tablet) */
-@media screen and (max-width: 566px) {
+/* Media query footer*/
+@media screen and (max-width: 566px) and (min-with: 1100) {
   #footer-section .bottom-block {
     display: none;
   }
