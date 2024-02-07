@@ -346,11 +346,11 @@ h4 {
 
 #about-section .container {
   display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    height: fit-content;
-    flex-direction: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+
+  height: fit-content;
 }
 
 #about-section .card-about {
@@ -528,7 +528,7 @@ footer p {
     width: calc(33.33% - 20px);
     margin: 10px;
   }
-  @media screen and (min-width: 566px)  {
+  @media screen and (max-width: 566px) {
   #about-section .container {
     display: flex;
     justify-content: space-between;
@@ -537,7 +537,7 @@ footer p {
     height: fit-content;
     flex-direction: column;
   }
-  @media screen and (min-width: 566px)  {
+
   #about-section .card-about {
     width: 100%;
   }
@@ -553,10 +553,9 @@ footer p {
     font-size: 8vw;
   }
 }
-  }
 
 /* Media query footer*/
-@media screen and (max-width: 566px) and (min-with: 1100) {
+@media screen and (max-width: 566px) {
   #footer-section .bottom-block {
     display: none;
   }
