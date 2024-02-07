@@ -528,7 +528,7 @@ footer p {
     width: calc(33.33% - 20px);
     margin: 10px;
   }
-  @media screen and (max-width: 566px) {
+
   #about-section .container {
     display: flex;
     justify-content: space-between;
