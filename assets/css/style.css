@@ -469,8 +469,18 @@ footer p {
 /*
 @media (min-width: 576px) {
   @media all and (max-width: 1100px) {*/
+/* Media query - mobile first (min-width) */
 
-@media screen and (min-width: 566px) and (max-width: 1100px) {
+/* Media query - desktop first (max-width) */
+
+/* Mix min-width max-width */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1100px) {
   .header {
     width: 100%;
     margin: 0 auto;
